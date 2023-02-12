@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="DatabaseEditor.CustomComponents.TableCreator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DatabaseEditor.CustomComponents"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="310">
+    <Grid>
+        <Border BorderThickness="2" BorderBrush="Gray" CornerRadius="10" Height="400" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DataGrid x:Name="tableFields" Height="320" Width="290" CanUserAddRows="True" CanUserDeleteRows="True" Margin="10,39,10,41"/>
+        <TextBox x:Name="newNameBox" HorizontalAlignment="Left" Margin="130,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Название таблицы:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="saveButton" Content="Сохранить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="121,368,0,0" Click="saveButton_Click"/>
+    </Grid>
+</UserControl>
